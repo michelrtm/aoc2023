@@ -39,7 +39,7 @@ const directory = `./day${args[1]}`;
               fs.writeFileSync(`${directory}/index.js`, `const fs = require ('fs');
 
 const data = Buffer.from(fs.readFileSync('./data.txt')).toString();
-const cleanData = data.split("\n").filter((v) => v !== '');
+const cleanData = data.split("\\n").filter((v) => v !== '');
 `);
             }
           } catch (e) {
